@@ -24,14 +24,14 @@ export default function Hero() {
     <section className="hero">
 
       <motion.div className="hero-left"
-      initial={{ opacity: 0, scale: 0.6 }}
+       initial={{ opacity: 0, scale: 0.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}>
         <img src={Hero3} alt="" />
       </motion.div>
 
       <motion.div className="hero-right"
-      initial={{ opacity: 0, scale: 0.6 }}
+       initial={{ opacity: 0, scale: 0.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}>
         <img src={Hero2} alt="" />

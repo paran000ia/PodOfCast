@@ -9,13 +9,13 @@ export default function Header() {
     <div className="header__container">
 
     <div className="header__logo">
-      <img src={logo2} alt="Logo 2" />
+      <a href="/Home"><img src={logo2} alt="Logo 2" /></a>
     </div>
 
       <nav className="header__nav">
-        <a href="/">Episodes</a>
-        <a href="/">About</a>
-        <a href="/">More</a>
+        <a href="/Episodes">Episodes</a>
+        <a href="/About">About</a>
+        <a href="/More">More</a>
       </nav>
 
       <div className="header__buttons">

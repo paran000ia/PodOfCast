@@ -1,0 +1,246 @@
+.contact {
+  background: white;
+  padding: 120px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+
+.contact-star {
+  width: 70px;
+  margin-bottom: 15px;
+  right:230px;
+  top:80px;
+
+  animation: float 4s ease-in-out infinite;
+}
+
+
+.contact-header h2 {
+  font-size: 64px;
+  font-weight: 800;
+  color: #000;
+  transition:.3s;
+}
+
+.contact-header:hover h2{
+  letter-spacing:1px;
+}
+
+
+.contact-header p {
+  color: #777;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+
+
+.contact-form {
+  max-width: 900px;
+  margin: auto;
+}
+
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+
+  margin-bottom: 30px;
+}
+
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.input-box label {
+  margin-bottom: 10px;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+.input-box span {
+  color: #d56756;
+}
+
+
+.input-box input,
+.input-box textarea {
+  border: 2px solid #111;
+  border-radius: 8px;
+
+  padding: 16px 18px;
+
+  font-size: 15px;
+
+  outline: none;
+  background: white;
+
+  transition:
+    transform .3s ease,
+    border-color .3s ease,
+    box-shadow .3s ease;
+}
+
+
+
+.input-box input:hover,
+.input-box textarea:hover {
+  transform: translateY(-3px);
+
+  border-color: #d56756;
+
+  box-shadow:
+    0 10px 25px rgba(213,103,86,.15);
+}
+
+
+
+.input-box input:focus,
+.input-box textarea:focus {
+
+  transform: translateY(-3px);
+
+  border-color: #d56756;
+
+  box-shadow:
+    0 15px 30px rgba(213,103,86,.25);
+}
+
+
+.message-box textarea {
+  height: 170px;
+  resize: none;
+}
+
+
+.contact-bottom {
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.required {
+  font-size: 14px;
+}
+
+
+.contact-bottom button {
+  width: 180px;
+  height: 55px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: black;
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    background .3s ease;
+}
+
+
+
+.contact-bottom button:hover {
+
+  background: #d56756;
+
+  transform:
+    translateY(-5px)
+    scale(1.03);
+
+
+  box-shadow:
+    0 15px 30px rgba(213,103,86,.3);
+}
+
+
+.contact-bottom button:active {
+  transform: scale(.95);
+}
+
+
+.contact-bottom p {
+  color: #666;
+
+  max-width: 150px;
+
+  line-height: 1.5;
+}
+
+
+.contact-bottom p span {
+  color: #d56756;
+}
+
+
+.contact-scribble {
+  position: absolute;
+
+  width: 100px;
+
+  left: 0;
+  bottom: 120px;
+
+  animation: float 5s ease-in-out infinite;
+}
+
+
+.contact-sparkle {
+  position: absolute;
+
+  width: 90px;
+
+  right: 130px;
+  top: 240px;
+
+  animation:
+    float 4s ease-in-out infinite;
+}
+
+
+@keyframes float {
+
+  0% {
+    transform:
+      translateY(0)
+      rotate(0deg);
+  }
+
+
+  50% {
+    transform:
+      translateY(-12px)
+      rotate(6deg);
+  }
+
+
+  100% {
+    transform:
+      translateY(0)
+      rotate(0);
+  }
+
+}

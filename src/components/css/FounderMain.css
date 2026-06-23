@@ -1,0 +1,120 @@
+.founder{
+  background:white;
+  padding:120px 40px;
+}
+
+.founder h2{
+  text-align:center;
+  font-size:58px;
+  font-weight:800;
+  color:#000;
+  margin-bottom:80px;
+
+  transition:.3s;
+}
+
+.founder:hover h2{
+  letter-spacing:1px;
+}
+
+.founder-grid{
+  max-width:1250px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+
+  gap:24px;
+}
+
+.founder-card{
+  background:white;
+
+  border:3px solid #111;
+  border-radius:12px;
+
+  display:flex;
+  gap:18px;
+  width: 470px;
+  height: 470px;
+  padding:12px;
+
+  box-shadow:8px 8px 0 #111;
+}
+
+.founder-card:hover{
+  transform:translateY(-10px);
+
+  box-shadow:
+  0 25px 45px rgba(0,0,0,.12);
+
+  border-color:#d56756;
+}
+
+.founder-image{
+  width:300px;
+  height:470px;
+
+  object-fit:cover;
+  border-radius:8px;
+}
+
+.founder-content{
+  flex:1;
+  position:relative;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.founder-star{
+  position:absolute;
+
+  width:90px;
+
+  right:15px;
+  top:-10px;
+}
+
+.founder-card:hover .founder-star{
+  transform:rotate(20deg);
+}
+
+.founder-content span{
+  color:#555;
+}
+
+.founder-content h3{
+  font-size:54px;
+  line-height:1;
+  margin:15px 0;
+
+  color:#000;
+}
+
+.founder-content p{
+  color:#666;
+  line-height:1.8;
+
+  margin-bottom:40px;
+}
+
+.founder-socials{
+  border-top:1px solid #ddd;
+
+  padding-top:18px;
+
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+
+.founder-socials svg{
+  cursor:pointer;
+}
+
+.founder-socials svg:hover{
+  color:#d56756;
+  transform:translateY(-3px);
+}

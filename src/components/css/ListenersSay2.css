@@ -1,0 +1,190 @@
+.listeners2{
+  background:white;
+
+  padding:120px 40px;
+
+  position:relative;
+}
+
+.listeners2-header{
+  text-align:center;
+
+  margin-bottom:70px;
+}
+
+.listeners2-header h2{
+  font-size:64px;
+  font-weight:800;
+
+  color:#000;
+
+  margin-bottom:10px;
+
+  transition:.3s;
+}
+
+.listeners2-header:hover h2{
+  letter-spacing:1px;
+}
+
+.listeners2-header p{
+  color:#777;
+  font-size:18px;
+}
+
+.listeners2-image-wrapper{
+  max-width:1200px;
+
+  margin:0 auto 100px;
+
+  position:relative;
+}
+
+.listeners2-image{
+  width:100%;
+
+  border-radius:10px;
+
+  display:block;
+
+  transition:.5s;
+}
+
+.listeners2-image:hover{
+  transform:scale(1.01);
+}
+
+.listeners2-scribble{
+  position:absolute;
+
+  left:120px;
+  bottom:120px;
+
+  width:220px;
+
+  animation: floatScribble 5s ease-in-out infinite;
+}
+
+.listeners2-vector{
+  position:absolute;
+
+  left:180px;
+  top:180px;
+
+  width:180px;
+
+  animation: floatVector 6s ease-in-out infinite;
+}
+
+.history-title{
+  text-align:center;
+
+  margin-bottom:70px;
+}
+
+.history-decoration{
+  color:#d56756;
+
+  font-size:36px;
+
+  display:block;
+
+  margin-bottom:10px;
+}
+
+.history-title h3{
+  font-size:52px;
+  font-weight:800;
+
+  color:#000;
+
+  transition:.3s;
+}
+
+.history-title:hover h3{
+  letter-spacing:1px;
+}
+
+.history-content{
+  max-width:1200px;
+
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+
+  gap:90px;
+}
+
+.history-content p{
+  color:#555;
+
+  line-height:2;
+
+  margin-bottom:30px;
+
+  font-size:17px;
+}
+
+.history-content strong{
+  color:#000;
+}
+
+.history-content div:hover{
+  transform:translateY(-4px);
+}
+
+@keyframes floatScribble{
+  0%{
+    transform:translateY(0) rotate(0deg);
+  }
+
+  50%{
+    transform:translateY(-10px) rotate(6deg);
+  }
+
+  100%{
+    transform:translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes floatVector{
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-12px);
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+}
+
+.listeners2-Sparkle {
+  position: absolute;
+
+  width: 180px;
+
+  left: 18%;
+
+  transform: translateX(220px);
+
+  top: 560px;     
+  animation: floatSparkle 4s ease-in-out infinite;
+}
+
+@keyframes floatSparkle {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(8deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
