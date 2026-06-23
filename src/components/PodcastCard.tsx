@@ -1,7 +1,12 @@
 import "./css/PodcastCard.css";
 import { motion } from "framer-motion";
 
-export default function PodcastCard({image,title,}) {
+interface podcast_type{
+  image: string
+  title: string
+}
+
+export default function PodcastCard({image, title}: podcast_type) {
   return (
     <motion.div className="podcast-card"
   initial={{ opacity: 0, y: 80 }}
