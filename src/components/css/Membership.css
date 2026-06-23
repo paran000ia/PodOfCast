@@ -1,0 +1,128 @@
+.membership {
+  background: white;
+  padding: 120px 20px;
+}
+
+.membership__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.membership__header {
+  text-align: center;
+  margin-bottom: 80px;
+  color: #000;
+}
+
+.membership__header h2 {
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #000;
+  transition:.3s ease;
+}
+.membership__header:hover h2{
+  letter-spacing:1px;
+}
+
+.membership__header p {@keyframes floatEpisode{
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+}
+  color: #666;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.benefit-card {
+  text-align: center;
+
+  opacity: 0;
+  animation: reveal 0.7s forwards;
+}
+
+.benefit-icon {
+  font-size: 42px;
+  margin-bottom: 20px;
+
+  transition: 0.3s;
+}
+
+.benefit-card:hover .benefit-icon {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+}
+
+.benefit-card h3 {
+  margin-bottom: 14px;
+  font-size: 24px;
+}
+
+.benefit-card p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.pricing-btn {
+  display: block;
+  margin: 80px auto 0;
+
+  padding: 18px 38px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: black;
+  color: white;
+
+  font-weight: 700;
+  cursor: pointer;
+
+}
+
+.pricing-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-btn:active {
+  transform: scale(0.97);
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.review-star2 {
+  position: absolute;
+
+  width: 200px;
+  top: 3600px;   
+  left: 63%;         
+  transform: translateX(220px);
+}
+

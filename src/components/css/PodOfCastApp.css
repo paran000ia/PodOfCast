@@ -1,0 +1,171 @@
+.app{
+  background:#edf2f4;
+
+  padding:140px 40px;
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+.app-content{
+  max-width:700px;
+
+  margin:auto;
+
+  text-align:center;
+
+  position:relative;
+  z-index:2;
+}
+
+.app-beta{
+  display:inline-block;
+
+  padding:6px 12px;
+
+  border:1px solid #d56756;
+  border-radius:6px;
+
+  color:#d56756;
+
+  font-size:13px;
+  font-weight:700;
+
+  margin-bottom:20px;
+}
+
+.app-content h2{
+  font-size:82px;
+  line-height:1.05;
+
+  font-weight:800;
+
+  color:#000;
+
+  margin-bottom:24px;
+}
+
+.app-content p{
+  font-size:22px;
+  color:#666;
+
+  margin-bottom:45px;
+}
+
+.app-content button{
+  width:240px;
+  height:64px;
+
+  background:black;
+  color:white;
+
+  border:none;
+  border-radius:10px;
+
+  cursor:pointer;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.app-content button:hover{
+  transform:translateY(-4px);
+
+  box-shadow:
+    0 14px 35px rgba(0,0,0,.18);
+}
+
+.app-content button:active{
+  transform:scale(.96);
+}
+
+.available-text{
+  display:block;
+
+  margin-top:35px;
+  margin-bottom:16px;
+
+  color:#666;
+}
+
+.app-platforms{
+  display:flex;
+  justify-content:center;
+  gap:24px;
+
+  font-size:28px;
+}
+
+.app-platforms svg{
+  transition:.3s;
+}
+
+.app-platforms svg:hover{
+  color:#d56756;
+  transform:translateY(-3px);
+}
+
+.app-phone-left{
+  position:absolute;
+
+  left:-60px;
+  bottom:-20px;
+
+  width:420px;
+
+  animation:floatPhone 6s ease-in-out infinite;
+}
+
+.app-phone-right{
+  position:absolute;
+
+  right:-60px;
+  top:30px;
+
+  width:400px;
+
+  animation:floatPhone 7s ease-in-out infinite;
+}
+
+@keyframes floatPhone{
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-12px);
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+}
+
+.app-decoration{
+  position:absolute;
+
+  top:0;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:60px;
+
+  animation:swing 5s ease-in-out infinite;
+}
+
+@keyframes swing{
+  0%{
+    transform:translateX(-50%) rotate(0deg);
+  }
+
+  50%{
+    transform:translateX(-50%) rotate(8deg);
+  }
+
+  100%{
+    transform:translateX(-50%) rotate(0deg);
+  }
+}
