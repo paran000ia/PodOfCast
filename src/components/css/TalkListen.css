@@ -17,11 +17,7 @@
   max-width: 900px;
 
   margin: 0 auto 120px;
-  transition:.3s ease;
-}
-
-.talk:hover h2 {
-  letter-spacing:1px;
+  
 }
 
 .talk-grid {

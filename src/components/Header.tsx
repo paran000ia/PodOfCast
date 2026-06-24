@@ -19,9 +19,10 @@ export default function Header() {
       </nav>
 
       <div className="header__buttons">
-        <button className="episodes-btn">
+        <a href="/blog"><button className="episodes-btn">
           Recent Episodes
         </button>
+        </a>
 
         <button className="subscribe-btn">
           Subscribe
