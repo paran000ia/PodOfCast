@@ -25,19 +25,7 @@
   letter-spacing:1px;
 }
 
-.membership__header p {@keyframes floatEpisode{
-  0%{
-    transform:translateY(0);
-  }
-
-  50%{
-    transform:translateY(-10px);
-  }
-
-  100%{
-    transform:translateY(0);
-  }
-}
+.membership__header p {
   color: #666;
 }
 
