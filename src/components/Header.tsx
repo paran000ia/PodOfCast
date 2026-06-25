@@ -1,5 +1,7 @@
 import "./css/Header.css";
 
+import { Link } from "react-router-dom";
+
 import logo2 from "../assets/logo2.png";
 
 
@@ -9,20 +11,20 @@ export default function Header() {
     <div className="header__container">
 
     <div className="header__logo">
-      <a href="/Home"><img src={logo2} alt="Logo 2" /></a>
+      <Link to="/Home"><img src={logo2} alt="Logo 2" /></Link>
     </div>
 
       <nav className="header__nav">
-        <a href="/Episodes">Episodes</a>
-        <a href="/About">About</a>
-        <a href="/More">More</a>
+        <Link to="/Episodes">Episodes</Link>
+        <Link to="/About">About</Link>
+        <Link to="/More">More</Link>
       </nav>
 
       <div className="header__buttons">
-        <a href="/blog"><button className="episodes-btn">
+        <Link to="/blog"><button className="episodes-btn">
           Recent Episodes
         </button>
-        </a>
+        </Link>
 
         <button className="subscribe-btn">
           Subscribe
@@ -32,4 +34,3 @@ export default function Header() {
   </header>
   );
 }
-
